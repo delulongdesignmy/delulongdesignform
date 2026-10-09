@@ -1,0 +1,2977 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borang Tempahan Kad Kahwin Eksklusif | De Lulong Design</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Palette: Dream Wedding Pink, Warm Cream & Soft Blue Cream */
+      --pink-50: #FFF3F6;
+      --pink-100: #FFE4EC;
+      --pink-200: #FBCDD9;
+      --pink-300: #F6A5B9;
+      --pink-500: #E66A8A;
+      --pink-700: #B7385A;
+      
+      --cream-50: #FCFAF6;
+      --cream-100: #F8F3EA;
+      --cream-200: #F1E7D5;
+      --cream-300: #E4D5BC;
+      --cream-card: #FFFFFF;
+      
+      /* Soft Blue Cream Theme for Action Buttons */
+      --soft-blue-light: #DCECF5;
+      --soft-blue: #93BBD2;
+      --soft-blue-hover: #7BA8C2;
+      --soft-blue-dark: #375F75;
+      --soft-blue-border: #C2DCEB;
+      
+      --text-main: #3D2D34;
+      --text-muted: #7A6971;
+      --gold-accent: #D4AF37;
+      --border-soft: #F0DEE4;
+      
+      --shadow-sm: 0 4px 12px rgba(230, 106, 138, 0.08);
+      --shadow-md: 0 10px 25px rgba(230, 106, 138, 0.12);
+      --shadow-lg: 0 18px 40px rgba(55, 95, 117, 0.15);
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 26px;
+      --transition: all 0.28s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #FFF3F6;
+      background-image: 
+        radial-gradient(circle at 12% 18%, rgba(255, 214, 226, 0.55) 0%, transparent 45%),
+        radial-gradient(circle at 88% 75%, rgba(255, 200, 215, 0.45) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(252, 250, 246, 0.6) 0%, transparent 100%),
+        url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e66a8a' fill-opacity='0.085' fill-rule='evenodd'%3E%3Cpath d='M50 42c3.2-6.5 9.7-8 14.5-4.8 4.8 3.2 6.4 9.7 3.2 14.5-3.2 4.8-9.7 11.3-17.7 16.1-8-4.8-14.5-11.3-17.7-16.1-3.2-4.8-1.6-11.3 3.2-14.5 4.8-3.2 11.3-1.7 14.5 4.8zm30 35c2-4 6-5 9-3 3 2 4 6 2 9-2 3-6 7-11 10-5-3-9-7-11-10-2-3-1-7 2-9 3-2 7-1 9 3zM20 20c2-4 6-5 9-3 3 2 4 6 2 9-2 3-6 7-11 10-5-3-9-7-11-10-2-3-1-7 2-9 3-2 7-1 9 3zm70 0l2 4 4 2-4 2-2 4-2-4-4-2 4-2zm-80 60l2 4 4 2-4 2-2 4-2-4-4-2 4-2zM85 50a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm-70 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/g%3E%3C/svg%3E");
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(80px);
+      opacity: 0.45;
+    }
+    body::before {
+      background: #FDC8D6;
+      top: -100px;
+      left: -80px;
+    }
+    body::after {
+      background: #D0E8F5;
+      bottom: -60px;
+      right: -80px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Compact Top Navigation Banner */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: rgba(252, 250, 246, 0.94);
+      border-bottom: 1px solid var(--border-soft);
+      padding: 5px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      transition: var(--transition);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+    .brand-icon {
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(135deg, var(--pink-200), var(--soft-blue-light));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      color: var(--pink-700);
+      font-size: 15px;
+    }
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--pink-700);
+      letter-spacing: -0.2px;
+      line-height: 1.1;
+    }
+    .brand-sub {
+      font-size: 0.65rem;
+      display: block;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--cream-100);
+      border: 1.5px solid var(--border-soft);
+      border-radius: 30px;
+      padding: 2px;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition);
+    }
+    .lang-btn.active {
+      background: linear-gradient(135deg, var(--soft-blue), var(--soft-blue-hover));
+      color: #FFFFFF;
+      box-shadow: 0 3px 10px rgba(123, 168, 194, 0.35);
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 45px 15px 35px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #FFF0F4, var(--soft-blue-light));
+      border: 1px solid var(--border-soft);
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--pink-700);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-size: 2.35rem;
+      font-weight: 800;
+      color: var(--pink-700);
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      margin-bottom: 14px;
+    }
+    .hero-title span {
+      font-size: 2.15rem;
+      color: var(--soft-blue-dark);
+      display: inline-block;
+      margin: 0 4px;
+      font-weight: 700;
+    }
+    .hero-desc {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      font-weight: 400;
+    }
+
+    /* Steps Indicator */
+    .steps-nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 35px;
+      flex-wrap: wrap;
+    }
+    .step-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--cream-card);
+      border: 1.5px solid var(--border-soft);
+      padding: 10px 20px;
+      border-radius: 40px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .step-pill.active {
+      border-color: var(--soft-blue);
+      background: linear-gradient(135deg, #FFFFFF, var(--soft-blue-light));
+      color: var(--soft-blue-dark);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .step-num {
+      width: 24px;
+      height: 24px;
+      background: var(--pink-100);
+      color: var(--pink-700);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .step-pill.active .step-num {
+      background: var(--soft-blue);
+      color: #FFFFFF;
+    }
+
+    .section-block {
+      margin-bottom: 50px;
+    }
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px dashed var(--pink-200);
+    }
+    .category-header span.cat-icon {
+      font-size: 1.4rem;
+    }
+    .category-header h3 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--pink-700);
+      letter-spacing: -0.3px;
+    }
+    .category-header p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Package Cards */
+    .pkg-card {
+      background: var(--cream-card);
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: var(--transition);
+      overflow: hidden;
+    }
+    .pkg-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--pink-300);
+    }
+    .pkg-card.selected {
+      border: 2px solid var(--soft-blue);
+      box-shadow: 0 10px 28px rgba(123, 168, 194, 0.28);
+      background: linear-gradient(180deg, #FFFFFF 0%, #F5F9FC 100%);
+    }
+    .pkg-card.selected::before {
+      content: '✓ DIPILIH / SELECTED';
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--soft-blue);
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      z-index: 5;
+    }
+
+    .pkg-media-wrap {
+      position: relative;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: var(--pink-50);
+      margin-bottom: 14px;
+      aspect-ratio: 4 / 3;
+      border: 1px solid rgba(230, 106, 138, 0.15);
+    }
+    .pkg-main-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      cursor: zoom-in;
+      transition: transform 0.35s ease;
+    }
+    .pkg-media-wrap:hover .pkg-main-img {
+      transform: scale(1.04);
+    }
+    .zoom-hint-badge {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(4px);
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 12px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      pointer-events: none;
+    }
+
+    /* Thumbnail Row for Multi-Image Packages */
+    .thumbnails-row {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 4px 2px 10px;
+      margin-bottom: 10px;
+      scrollbar-width: thin;
+    }
+    .thumbnails-row::-webkit-scrollbar {
+      height: 4px;
+    }
+    .thumbnails-row::-webkit-scrollbar-thumb {
+      background: var(--pink-200);
+      border-radius: 10px;
+    }
+    .thumb-item {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1.5px solid var(--border-soft);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .thumb-item:hover, .thumb-item.active {
+      border-color: var(--soft-blue);
+      transform: scale(1.08);
+      box-shadow: 0 3px 8px rgba(123, 168, 194, 0.3);
+    }
+    .thumb-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Video Sample Button */
+    .video-sample-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #FFF3F6, #F2F8FC);
+      border: 1.5px dashed var(--soft-blue);
+      color: var(--soft-blue-dark);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .video-sample-btn:hover {
+      background: var(--soft-blue-light);
+      transform: translateY(-2px);
+    }
+
+    .pkg-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .pkg-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--pink-700);
+      margin-bottom: 4px;
+    }
+    .pkg-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .price-currency {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--soft-blue-dark);
+    }
+    .price-value {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--soft-blue-dark);
+    }
+    .pkg-features {
+      list-style: none;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      flex: 1;
+    }
+    .pkg-features li {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+    }
+    .pkg-features li::before {
+      content: '🌸';
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .btn-select-pkg {
+      width: 100%;
+      background: linear-gradient(135deg, var(--soft-blue), var(--soft-blue-hover));
+      color: #FFFFFF;
+      border: 1px solid var(--soft-blue-border);
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(123, 168, 194, 0.35);
+    }
+    .btn-select-pkg:hover {
+      background: linear-gradient(135deg, var(--soft-blue-hover), var(--soft-blue-dark));
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(123, 168, 194, 0.45);
+    }
+    .pkg-card.selected .btn-select-pkg {
+      background: linear-gradient(135deg, #4F7E97, #375F75);
+    }
+
+    /* Sticky Bottom Order Bar */
+    .order-bar-sticky {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      border: 1.5px solid var(--soft-blue-border);
+      padding: 14px 24px;
+      border-radius: 40px;
+      box-shadow: var(--shadow-lg);
+      z-index: 90;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      animation: floatUp 0.35s ease;
+    }
+    @keyframes floatUp {
+      from { opacity: 0; transform: translate(-50%, 30px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+    .order-bar-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .order-bar-pkg {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .order-bar-price {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--pink-700);
+    }
+    .btn-proceed {
+      background: linear-gradient(135deg, var(--soft-blue), var(--soft-blue-hover));
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(123, 168, 194, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .btn-proceed:hover {
+      background: var(--soft-blue-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Form Container */
+    .form-wrapper {
+      background: var(--cream-card);
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 35px 30px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .form-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .form-header h2 {
+      font-size: 1.95rem;
+      font-weight: 800;
+      color: var(--pink-700);
+      letter-spacing: -0.4px;
+      margin-bottom: 6px;
+    }
+    .form-header p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .form-section-card {
+      background: #FFFAF9;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      margin-bottom: 24px;
+    }
+    .form-section-title {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--pink-700);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    @media (max-width: 768px) {
+      .form-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-label {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .form-label .req {
+      color: #E65050;
+      margin-left: 3px;
+    }
+    .form-hint {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      padding: 11px 14px;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--soft-blue);
+      box-shadow: 0 0 0 3.5px rgba(147, 187, 210, 0.25);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .pic-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    .btn-pic-remove {
+      background: #FFECEE;
+      border: 1px solid #FFCCD2;
+      color: #D3455B;
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+    .btn-pic-remove:hover {
+      background: #D3455B;
+      color: #FFFFFF;
+    }
+    .btn-add-pic {
+      background: linear-gradient(135deg, #F3F8FB, var(--soft-blue-light));
+      border: 1.5px dashed var(--soft-blue);
+      color: var(--soft-blue-dark);
+      padding: 9px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 6px;
+      transition: var(--transition);
+    }
+    .btn-add-pic:hover {
+      background: var(--soft-blue-light);
+      transform: translateY(-2px);
+    }
+
+    /* Color Swatches Checkbox */
+    .color-swatches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .color-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-soft);
+      padding: 8px 12px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+    .color-pill input {
+      display: none;
+    }
+    .color-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.12);
+      flex-shrink: 0;
+    }
+    .color-pill:has(input:checked) {
+      border-color: var(--soft-blue);
+      background: var(--soft-blue-light);
+      font-weight: 600;
+      color: var(--soft-blue-dark);
+    }
+
+    /* Choice Group Grid */
+    .choice-group-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+    }
+    .choice-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-soft);
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: var(--transition);
+      font-size: 0.86rem;
+    }
+    .choice-card:has(input:checked) {
+      border-color: var(--soft-blue);
+      background: #F4F8FA;
+      font-weight: 600;
+      color: var(--soft-blue-dark);
+      box-shadow: 0 2px 8px rgba(123, 168, 194, 0.2);
+    }
+
+    /* Addon Option Cards */
+    .addon-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .addon-card:has(input:checked) {
+      border-color: var(--pink-300);
+      background: #FFF8FA;
+      box-shadow: var(--shadow-sm);
+    }
+    .addon-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .addon-price {
+      font-weight: 700;
+      color: var(--pink-700);
+      font-size: 0.95rem;
+    }
+
+    .qr-payment-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #FFFFFF;
+      border: 2px dashed var(--pink-200);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .qr-img {
+      max-width: 220px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 12px;
+      cursor: zoom-in;
+    }
+
+    .file-dropzone {
+      border: 2px dashed var(--soft-blue);
+      background: #F7FBFC;
+      border-radius: var(--radius-sm);
+      padding: 22px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+    }
+    .file-dropzone:hover {
+      background: var(--soft-blue-light);
+    }
+    .file-dropzone input[type="file"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+    .receipt-preview-img {
+      max-width: 150px;
+      max-height: 150px;
+      border-radius: 8px;
+      margin-top: 10px;
+      object-fit: cover;
+      display: none;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Terms Box */
+    .terms-box {
+      background: #FFF8F9;
+      border-left: 4px solid var(--pink-500);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 20px 0;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+    .terms-agree-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--pink-700);
+      margin-bottom: 25px;
+    }
+    .terms-agree-wrap input {
+      margin-top: 4px;
+      accent-color: var(--pink-700);
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Price Summary Panel */
+    .price-summary-panel {
+      background: linear-gradient(135deg, #FFF9FA 0%, #F5F9FB 100%);
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .summary-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-top: 12px;
+      border-top: 2px dashed var(--pink-200);
+      margin-top: 10px;
+    }
+    .summary-total span:first-child {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+    .summary-total .total-amount {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--pink-700);
+    }
+
+    /* WhatsApp Submit Button */
+    .btn-submit-whatsapp {
+      width: 100%;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #FFFFFF;
+      border: none;
+      padding: 16px 24px;
+      border-radius: 40px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+      transition: var(--transition);
+      letter-spacing: 0.3px;
+    }
+    .btn-submit-whatsapp:hover {
+      background: linear-gradient(135deg, #20BD5A, #0E7569);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
+    }
+    .btn-submit-whatsapp:disabled {
+      background: #D5D5D5;
+      cursor: not-allowed;
+      box-shadow: none;
+      transform: none;
+    }
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 20, 25, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.28s ease;
+    }
+    .modal-backdrop.show {
+      display: flex;
+      opacity: 1;
+    }
+    .modal-content-wrap {
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #FFFFFF;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: var(--transition);
+    }
+    .modal-close-btn:hover {
+      background: #000000;
+      transform: scale(1.1);
+    }
+    .modal-img {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      background: #111;
+      display: block;
+    }
+    .modal-video {
+      width: 100%;
+      max-height: 80vh;
+      outline: none;
+      background: #000;
+    }
+
+    /* Custom Toast Message */
+    .toast-box {
+      position: fixed;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      background: #FFFFFF;
+      border-left: 5px solid var(--pink-500);
+      padding: 14px 24px;
+      border-radius: 12px;
+      box-shadow: var(--shadow-lg);
+      z-index: 1100;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .toast-box.show {
+      transform: translateX(-50%) translateY(0);
+    }
+    .toast-box.error {
+      border-left-color: #E65050;
+      color: #BA2828;
+    }
+
+    /* Order History Record Display */
+    .order-records-panel {
+      background: var(--cream-card);
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 50px;
+    }
+    .record-header-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 2px dashed var(--pink-200);
+      flex-wrap: wrap;
+    }
+    .record-header-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--pink-700);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .record-badge-count {
+      background: var(--soft-blue);
+      color: #FFFFFF;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .order-records-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .order-record-card {
+      background: #FFFBFB;
+      border: 1.5px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      transition: var(--transition);
+      animation: recordFadeIn 0.4s ease;
+    }
+    @keyframes recordFadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translate(0); }
+    }
+    .order-record-card:hover {
+      border-color: var(--soft-blue);
+      box-shadow: var(--shadow-sm);
+    }
+    .record-main-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .record-order-id {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+    .record-pkg-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--pink-700);
+    }
+    .record-couple-name {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-main);
+    }
+    .record-meta-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .record-wishes-snippet {
+      font-size: 0.8rem;
+      color: #55444D;
+      font-style: italic;
+      background: #FFF0F4;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-top: 4px;
+      display: inline-block;
+      max-width: 500px;
+    }
+    .record-price-status {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+    .record-price-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .record-price-badge {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--soft-blue-dark);
+      background: var(--soft-blue-light);
+      padding: 4px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--soft-blue-border);
+      display: inline-block;
+    }
+    .record-status-tag {
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: #128C7E;
+      background: #E8F8F0;
+      padding: 3px 8px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .record-empty-state {
+      text-align: center;
+      padding: 30px 15px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      background: #FFFDFD;
+      border-radius: var(--radius-sm);
+      border: 1.5px dashed var(--pink-200);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 80px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-soft);
+      background: rgba(255, 255, 255, 0.4);
+    }
+    footer p.footer-brand {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--pink-700);
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2.1rem;
+      }
+      .hero-title span {
+        font-size: 2.5rem;
+      }
+      .form-wrapper {
+        padding: 22px 16px;
+      }
+      .order-bar-sticky {
+        bottom: 10px;
+        width: 95%;
+        padding: 10px 16px;
+      }
+      .order-bar-price {
+        font-size: 1rem;
+      }
+      .btn-proceed {
+        padding: 8px 16px;
+        font-size: 0.82rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slim Compact Navigation Banner -->
+  <nav class="top-nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon">💍</div>
+        <div>
+          <div class="brand-title">De Lulong Design</div>
+          <span class="brand-sub" data-i18n="studioSubtitle">Studio Kad Kahwin Eksklusif</span>
+        </div>
+      </a>
+
+      <!-- Language Switch Buttons -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btnLangMs" onclick="switchLanguage('ms')">
+          <span>🇲🇾</span> BM
+        </button>
+        <button class="lang-btn" id="btnLangEn" onclick="switchLanguage('en')">
+          <span>🇬🇧</span> EN
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero-section">
+      <div class="hero-badge">
+        <span>✨</span> <span data-i18n="heroBadge">Tempahan Mudah & Siap Pantas</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-i18n="heroTitleCute">Cute & Sweet</span><br>
+        <span data-i18n="heroTitleMain">Kad Kahwin Idaman Anda</span>
+      </h1>
+      <p class="hero-desc" data-i18n="heroDesc">
+        Pilih rekaan pakej kegemaran anda, isi butiran majlis dengan teratur, dan hantar pesanan anda terus ke WhatsApp kami dengan pantas!
+      </p>
+
+      <div class="steps-nav">
+        <div class="step-pill active" id="stepPill1" onclick="scrollToSection('sectionPackages')">
+          <span class="step-num">1</span>
+          <span data-i18n="step1Label">Pilih Pakej Kad</span>
+        </div>
+        <div class="step-pill" id="stepPill2" onclick="scrollToSection('sectionOrderForm')">
+          <span class="step-num">2</span>
+          <span data-i18n="step2Label">Isi Butiran Tempahan</span>
+        </div>
+        <div class="step-pill" id="stepPill3" onclick="scrollToSection('sectionPayment')">
+          <span class="step-num">3</span>
+          <span data-i18n="step3Label">Bayaran & Hantar Order</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <div id="sectionPackages">
+      
+      <!-- Category 1: Simple Design Looks -->
+      <div class="section-block">
+        <div class="category-header">
+          <span class="cat-icon">💌</span>
+          <h3 data-i18n="catSimpleTitle">Simple Design Looks</h3>
+          <p data-i18n="catSimpleSub">Pilihan ringkas & jimat</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package Basic A -->
+          <div class="pkg-card" data-pkg-id="basic-a" data-pkg-name="Package Basic A" data-pkg-price="8">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/5834b1b5-c92a-486e-b135-10eb7b189713.jpg" 
+                   alt="Package Basic A" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)" 
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Basic+A'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+            <div class="pkg-info">
+              <h4 class="pkg-title">Package Basic A</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">8</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="basicADesc">Design PDF 1 Page only.</li>
+                <li data-i18n="featEasyShare">Mudah kongsi melalui WhatsApp / Telegram</li>
+                <li data-i18n="featHighRes">Resolusi kualiti tinggi</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('basic-a', 'Package Basic A', 8)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+
+          <!-- Package Basic B -->
+          <div class="pkg-card" data-pkg-id="basic-b" data-pkg-name="Package Basic B" data-pkg-price="15">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/6389f867-6a4a-44b2-95ed-65c92f9ef77e.jpg" 
+                   alt="Package Basic B" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Basic+B'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+            <div class="pkg-info">
+              <h4 class="pkg-title">Package Basic B</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">15</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="basicBDesc">Video Motion 1-2 Page Only.</li>
+                <li data-i18n="featAnimation">Animasi teks dan peralihan lembut</li>
+                <li data-i18n="featFormat">Format MP4 mesra telefon pintar</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('basic-b', 'Package Basic B', 15)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Advance Looks -->
+      <div class="section-block">
+        <div class="category-header">
+          <span class="cat-icon">✨</span>
+          <h3 data-i18n="catAdvanceTitle">Advance Looks</h3>
+          <p data-i18n="catAdvanceSub">Animasi lebih memukau</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package Premium A -->
+          <div class="pkg-card" data-pkg-id="premium-a" data-pkg-name="Package Premium A" data-pkg-price="20">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/ae813367-75aa-4d7b-9d16-1b52db523e80.png" 
+                   alt="Package Premium A" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Premium+A'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+            <div class="pkg-info">
+              <h4 class="pkg-title">Package Premium A</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">20</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="premiumADesc">Video Motion 1-3 Page Only</li>
+                <li data-i18n="featMultiPages">Muka surat lebih lengkap dengan jadual & lokasi</li>
+                <li data-i18n="featAestheticVibe">Tema visual pastel estetik</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('premium-a', 'Package Premium A', 20)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3: Etnik Looks -->
+      <div class="section-block">
+        <div class="category-header">
+          <span class="cat-icon">🌺</span>
+          <h3 data-i18n="catEtnikTitle">Etnik Looks</h3>
+          <p data-i18n="catEtnikSub">Keanggunan warisan budaya tradisional</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package Premium B (7 Gallery Images with auto zoom) -->
+          <div class="pkg-card" data-pkg-id="premium-b" data-pkg-name="Package Premium B (Etnik Looks)" data-pkg-price="35">
+            <div class="pkg-media-wrap">
+              <img id="mainImgEtnikB" 
+                   src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/34405b03-e38e-40dc-bd7c-e0548e7cfaaa.png" 
+                   alt="Package Premium B" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Premium+B+Etnik'">
+              <span class="zoom-hint-badge">🔍 Zoom Galeri</span>
+            </div>
+
+            <!-- 7 Thumbnails Row with auto-switch and zoom -->
+            <div class="thumbnails-row" id="thumbsEtnikB">
+              <div class="thumb-item active" onclick="switchCardGallery('mainImgEtnikB', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/34405b03-e38e-40dc-bd7c-e0548e7cfaaa.png', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/34405b03-e38e-40dc-bd7c-e0548e7cfaaa.png" alt="Etnik 1">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEtnikB', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/899dfebb-4eb9-4bb0-a086-e4387ccd99c9.png', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/899dfebb-4eb9-4bb0-a086-e4387ccd99c9.png" alt="Etnik 2">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEtnikB', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/419a8b94-7829-4fda-ba96-77ba4e7b54fd.png', this6)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/419a8b94-7829-4fda-ba96-77ba4e7b54fd.png" alt="Etnik 3">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEtnikB', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/2026c5d0-9690-4afd-94d6-94c6b817dd95.png', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/2026c5d0-9690-4afd-94d6-94c6b817dd95.png" alt="Etnik 4">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEtnikB', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/f474786a-cf58-4c8c-bb94-7ac0d6620846.png', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/f474786a-cf58-4c8c-bb94-7ac0d6620846.png" alt="Etnik 5">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEtnikB', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/c3159b7c-9dcf-4081-bed6-11c66a180814.png', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/c3159b7c-9dcf-4081-bed6-11c66a180814.png" alt="Etnik 6">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEtnikB', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/7c75b3d4-8a11-4c14-af8d-4d8ecc648473.png', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/7c75b3d4-8a11-4c14-af8d-4d8ecc648473.png" alt="Etnik 7">
+              </div>
+            </div>
+
+            <div class="pkg-info">
+              <h4 class="pkg-title">Package Premium B</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">35</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="premiumBDesc">Video Motion + Pdf Not for Print + Music</li>
+                <li data-i18n="featEthnicDesigns">Pilihan corak etnik tradisional elegan</li>
+                <li data-i18n="featBgMusic">Latar belakang muzik romantis / adat</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('premium-b', 'Package Premium B (Etnik)', 35)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4: Package Eksklusif Premium Website -->
+      <div class="section-block">
+        <div class="category-header">
+          <span class="cat-icon">🌐</span>
+          <h3 data-i18n="catExclusiveTitle">Package Eksklusif Premium Website</h3>
+          <p data-i18n="catExclusiveSub">Laman jemputan moden interaktif</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package Website A -->
+          <div class="pkg-card" data-pkg-id="exclusive-a" data-pkg-name="Package Website A" data-pkg-price="40">
+            <div class="pkg-media-wrap">
+              <img id="mainImgEksklusifA" 
+                   src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/8a310af4-34ac-4c8e-ac6b-3d527ea3d7c0.jpg" 
+                   alt="Package Website A" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Website+A'">
+              <span class="zoom-hint-badge">🔍 Zoom Galeri</span>
+            </div>
+
+            <!-- 4 Thumbnails -->
+            <div class="thumbnails-row">
+              <div class="thumb-item active" onclick="switchCardGallery('mainImgEksklusifA', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/8a310af4-34ac-4c8e-ac6b-3d527ea3d7c0.jpg', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/8a310af4-34ac-4c8e-ac6b-3d527ea3d7c0.jpg" alt="A1">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEksklusifA', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/ce5550ea-0622-4ff9-b508-3057b5b7bc16.jpg', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/ce5550ea-0622-4ff9-b508-3057b5b7bc16.jpg" alt="A2">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEksklusifA', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/66e0f413-0570-4df2-b2d3-3ab30379b18b.jpg', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/66e0f413-0570-4df2-b2d3-3ab30379b18b.jpg" alt="A3">
+              </div>
+              <div class="thumb-item" onclick="switchCardGallery('mainImgEksklusifA', 'https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/d5cf9ca1-e60c-4c2b-922a-c53c03c38c15.jpg', this)">
+                <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/d5cf9ca1-e60c-4c2b-922a-c53c03c38c15.jpg" alt="A4">
+              </div>
+            </div>
+
+            <div class="pkg-info">
+              <h4 class="pkg-title">Package Website A</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">40</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="exclADesc">Website Page + Music + RSVP</li>
+                <li data-i18n="featDirectLink">Link web unik untuk tetamu</li>
+                <li data-i18n="featRsvpBasic">Borang RSVP tetamu terbina dalam</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('exclusive-a', 'Package Website A', 40)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+
+          <!-- Package Website B (with Video Play Trigger) -->
+          <div class="pkg-card" data-pkg-id="exclusive-b" data-pkg-name="Package Website B" data-pkg-price="50">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/58e14b23-1e23-48c8-8a59-faa969c03d5b.png" 
+                   alt="Package Website B" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Website+B'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+
+            <!-- Video Sample Button -->
+            <button type="button" class="video-sample-btn" onclick="openVideoModal('https://res.cloudinary.com/shbs60qv/video/upload/v1791519574/VID-20261009-WA0056_ktopjn.mp4')">
+              ▶️ <span data-i18n="btnWatchVideo">Tekan Sini Untuk Contoh Video</span>
+            </button>
+
+            <div class="pkg-info">
+              <h4 class="pkg-title">Package Website B</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">50</span>
+              </div>
+              <ul class="pkg-features">
+                <li><strong>Video Motion Website Style</strong></li>
+                <li data-i18n="exclBDesc">Website Page Link + Music + RSVP</li>
+                <li><strong>+ 5 Button Menu:</strong> Attending Form + Gift + Wishes + Location + Music</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('exclusive-b', 'Package Website B', 50)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+
+          <!-- Package Website C (with Video Play Trigger) -->
+          <div class="pkg-card" data-pkg-id="exclusive-c" data-pkg-name="Package Website C" data-pkg-price="80">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/631dc6e1-ad0c-4c0e-ac85-da8fd677a08e.jpg" 
+                   alt="Package Website C" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Website+C'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+
+            <!-- Video Sample Button -->
+            <button type="button" class="video-sample-btn" onclick="openVideoModal('https://res.cloudinary.com/shbs60qv/video/upload/v1791519798/VID-20261009-WA0058_tue04t.mp4')">
+              ▶️ <span data-i18n="btnWatchVideo">Tekan Sini Untuk Contoh Video</span>
+            </button>
+
+            <div class="pkg-info">
+              <h4 class="pkg-title">Package Website C</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">80</span>
+              </div>
+              <ul class="pkg-features">
+                <li><strong>Scroll Website Page Style ✨</strong></li>
+                <li data-i18n="exclCDesc">Website Page Link + Music + RSVP</li>
+                <li><strong>+ 5 Button Menu:</strong> Attending Form + Gift + Wishes + Location + Music</li>
+                <li><strong>+ Countdown Calendar + Guest No Display</strong></li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('exclusive-c', 'Package Website C', 80)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 5: Combo Package -->
+      <div class="section-block">
+        <div class="category-header">
+          <span class="cat-icon">🎁</span>
+          <h3 data-i18n="catComboTitle">Combo Package</h3>
+          <p data-i18n="catComboSub">Pilihan lengkap serba boleh</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Combo A -->
+          <div class="pkg-card" data-pkg-id="combo-a" data-pkg-name="Combo A" data-pkg-price="48">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/ce4d3ef9-73df-4932-bad4-4e146f3c6979.png" 
+                   alt="Combo A" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Combo+A'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+            <div class="pkg-info">
+              <h4 class="pkg-title">Combo A</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">48</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="comboADesc">Video Motion + Pdf For Print use only</li>
+                <li data-i18n="featPrintable">Sedia untuk dihantar ke kedai cetak</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('combo-a', 'Combo A', 48)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+
+          <!-- Combo B -->
+          <div class="pkg-card" data-pkg-id="combo-b" data-pkg-name="Combo B" data-pkg-price="100">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/7e633efb-e4cd-4efd-a942-44bb21a88309.png" 
+                   alt="Combo B" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Combo+B'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+            <div class="pkg-info">
+              <h4 class="pkg-title">Combo B</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">100</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="comboBDesc">Website Page + Pdf For Print Use Only</li>
+                <li data-i18n="featCompleteDuo">Dua dalam satu untuk digital & fizikal</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('combo-b', 'Combo B', 100)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+
+          <!-- Combo C -->
+          <div class="pkg-card" data-pkg-id="combo-c" data-pkg-name="Combo C" data-pkg-price="150">
+            <div class="pkg-media-wrap">
+              <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/29688b25-f6bc-4f80-afee-ef3645d907df.png" 
+                   alt="Combo C" 
+                   class="pkg-main-img" 
+                   onclick="openImageModal(this.src)"
+                   onerror="this.src='https://placehold.co/600x450/FFF0F3/B7385A?text=Combo+C'">
+              <span class="zoom-hint-badge">🔍 Zoom</span>
+            </div>
+            <div class="pkg-info">
+              <h4 class="pkg-title">Combo C</h4>
+              <div class="pkg-price-row">
+                <span class="price-currency">RM</span>
+                <span class="price-value">150</span>
+              </div>
+              <ul class="pkg-features">
+                <li data-i18n="comboCDesc">Untuk Dua Link Pax For Website Page Reception Invitation</li>
+                <li data-i18n="featTwoSides">Sesuai untuk majlis sebelah lelaki & perempuan berasingan</li>
+              </ul>
+              <button class="btn-select-pkg" onclick="selectPackage('combo-c', 'Combo C', 150)">
+                <span data-i18n="btnSelect">Pilih Pakej Ini</span> 🌸
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Sticky Order Notification Bar -->
+    <div class="order-bar-sticky" id="stickyOrderBar" style="display: none;">
+      <div class="order-bar-info">
+        <span class="order-bar-pkg" id="stickyPkgName" data-i18n="noPkgSelected">Belum memilih pakej</span>
+        <span class="order-bar-price" id="stickyPkgPrice">RM 0</span>
+      </div>
+      <button class="btn-proceed" onclick="scrollToSection('sectionOrderForm')">
+        <span data-i18n="btnProceedFill">Isi Butiran Tempahan</span> ➔
+      </button>
+    </div>
+
+    <!-- Order Form Section -->
+    <section id="sectionOrderForm" class="form-wrapper">
+      <div class="form-header">
+        <h2 data-i18n="formTitle">Borang Maklumat Tempahan Kad</h2>
+        <p data-i18n="formSubtitle">Sila lengkapkan butiran pengantin dan acara perkahwinan anda di bawah</p>
+      </div>
+
+      <!-- Current Selected Package Indicator -->
+      <div class="form-section-card" style="background: linear-gradient(135deg, #FFF5F7, #F2F8FC); border: 1.5px solid var(--soft-blue);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <span style="font-size:0.8rem; color:var(--text-muted);" data-i18n="activePkgLabel">Pakej Dipilih:</span>
+            <h3 id="formActivePkgTitle" style="color:var(--pink-700); font-size:1.35rem; font-weight:700;">Sila Pilih Pakej Di Atas</h3>
+          </div>
+          <div style="text-align:right;">
+            <span style="font-size:0.8rem; color:var(--text-muted);" data-i18n="basePriceLabel">Harga Asas:</span>
+            <div id="formActivePkgPrice" style="font-size:1.35rem; font-weight:800; color:var(--soft-blue-dark);">RM 0</div>
+          </div>
+        </div>
+      </div>
+
+      <form id="weddingOrderForm" onsubmit="event.preventDefault(); submitOrderToWhatsApp();">
+        
+        <!-- Bride & Groom Info -->
+        <div class="form-section-card">
+          <div class="form-section-title">
+            <span>👰🤵</span> <span data-i18n="secCoupleTitle">Maklumat Pengantin</span>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="labelGroom">Nama Pengantin Lelaki:</span>
+                <span class="req">*</span>
+              </label>
+              <input type="text" id="groomName" class="form-input" placeholder="Contoh: Muhammad Harry Bin Azman" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="labelBride">Nama Pengantin Perempuan:</span>
+                <span class="req">*</span>
+              </label>
+              <input type="text" id="brideName" class="form-input" placeholder="Contoh: Nur Anna Binti Rosli" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="labelShortName">Cadangan Nama Pada Kad (Contoh: Anna & Harry):</span>
+              <span class="req">*</span>
+            </label>
+            <input type="text" id="cardShortName" class="form-input" maxlength="40" placeholder="Anna & Harry" required>
+            <span class="form-hint" data-i18n="shortNameHint">(Maksimum tidak terlalu panjang, disarankan nama panggilan)</span>
+          </div>
+        </div>
+
+        <!-- Parents Information -->
+        <div class="form-section-card">
+          <div class="form-section-title">
+            <span>👨‍👩‍👧‍👦</span> <span data-i18n="secParentsTitle">Nama Ibu Bapa</span>
+          </div>
+
+          <!-- Groom Parents List -->
+          <div style="margin-bottom:16px;">
+            <h4 style="font-size:0.92rem; color:var(--soft-blue-dark); margin-bottom:8px; font-weight:600;" data-i18n="titleGroomParents">
+              Nama Ibu Bapa Sebelah Lelaki:
+            </h4>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" data-i18n="labelGroomFather">1. Nama Bapa (Lelaki):</label>
+                <input type="text" id="groomFather" class="form-input" placeholder="Nama Bapa Pengantin Lelaki">
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="labelGroomMother">2. Nama Ibu (Lelaki):</label>
+                <input type="text" id="groomMother" class="form-input" placeholder="Nama Ibu Pengantin Lelaki">
+              </div>
+            </div>
+          </div>
+
+          <!-- Bride Parents List -->
+          <div>
+            <h4 style="font-size:0.92rem; color:var(--soft-blue-dark); margin-bottom:8px; font-weight:600;" data-i18n="titleBrideParents">
+              Nama Ibu Bapa Sebelah Perempuan:
+            </h4>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" data-i18n="labelBrideFather">1. Nama Bapa (Perempuan):</label>
+                <input type="text" id="brideFather" class="form-input" placeholder="Nama Bapa Pengantin Perempuan">
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="labelBrideMother">2. Nama Ibu (Perempuan):</label>
+                <input type="text" id="brideMother" class="form-input" placeholder="Nama Ibu Pengantin Perempuan">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Location & Timing -->
+        <div class="form-section-card">
+          <div class="form-section-title">
+            <span>📍</span> <span data-i18n="secEventTitle">Maklumat & Lokasi Majlis</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="labelAddress">Alamat Majlis:</span>
+              <span class="req">*</span>
+            </label>
+            <textarea id="eventAddress" class="form-textarea" placeholder="Contoh: Dewan Perdana Gemilang, Jalan Kuching, 50480 Kuala Lumpur" required></textarea>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" data-i18n="labelMapLink">Link Alamat Majlis (Google Maps / Waze):</label>
+              <input type="text" id="eventMapLink" class="form-input" placeholder="https://maps.google.com/?q=... (atau N/A jika tiada)">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="labelQrOpt">Pilihan Minta Buat Dalam Bentuk QR:</span>
+                <span class="req">*</span>
+              </label>
+              <div style="display:flex; gap:20px; align-items:center; padding-top:6px;">
+                <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+                  <input type="radio" name="qrLocationOpt" value="Ya" checked> <span data-i18n="optYes">Ya</span>
+                </label>
+                <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+                  <input type="radio" name="qrLocationOpt" value="Tidak"> <span data-i18n="optNo">Tidak</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="labelDate">Tarikh Majlis:</span>
+                <span class="req">*</span>
+              </label>
+              <input type="date" id="eventDate" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="labelTime">Masa Majlis:</span>
+                <span class="req">*</span>
+              </label>
+              <input type="text" id="eventTime" class="form-input" placeholder="Contoh: 11:00 AM - 4:00 PM" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unlimited PIC Contact List -->
+        <div class="form-section-card">
+          <div class="form-section-title">
+            <span>📞</span> <span data-i18n="secPicTitle">PIC List Contact (Unlimited)</span>
+          </div>
+          <p class="form-hint" style="margin-bottom:12px;" data-i18n="picHint">
+            Masukkan senarai pegawai atau waris yang boleh dihubungi oleh para tetamu.
+          </p>
+
+          <div id="picContainer">
+            <!-- Row 1 Default -->
+            <div class="pic-row">
+              <input type="text" class="form-input pic-name" placeholder="Nama PIC (cth: Pak Long Azman)">
+              <input type="tel" class="form-input pic-phone" placeholder="No Telefon (cth: 012-3456789)">
+              <button type="button" class="btn-pic-remove" onclick="removePicRow(this)" title="Hapus">✕</button>
+            </div>
+          </div>
+
+          <button type="button" class="btn-add-pic" onclick="addPicRow()">
+            <span>➕</span> <span data-i18n="btnAddPic">+ Tambah PIC Contact</span>
+          </button>
+        </div>
+
+        <!-- Theme Colors & Card Style -->
+        <div class="form-section-card">
+          <div class="form-section-title">
+            <span>🎨</span> <span data-i18n="secThemeTitle">Tema Warna & Gaya Majlis</span>
+          </div>
+
+          <!-- Theme Colors (Random boleh tanda semua) -->
+          <div class="form-group">
+            <label class="form-label" data-i18n="labelColors">
+              Warna Tema Majlis (Boleh tanda lebih dari satu / Random):
+            </label>
+            <div class="color-swatches-grid">
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Dusty Pink">
+                <span class="color-dot" style="background:#F4B6C2;"></span>
+                <span>Dusty Pink</span>
+              </label>
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Baby Blue / Soft Blue">
+                <span class="color-dot" style="background:#A7C7E7;"></span>
+                <span>Baby Blue</span>
+              </label>
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Cream / Champagne">
+                <span class="color-dot" style="background:#F7E7CE;"></span>
+                <span>Cream / Gold</span>
+              </label>
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Emerald Green">
+                <span class="color-dot" style="background:#50C878;"></span>
+                <span>Emerald</span>
+              </label>
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Sage Green">
+                <span class="color-dot" style="background:#9CAF88;"></span>
+                <span>Sage Green</span>
+              </label>
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Navy Blue">
+                <span class="color-dot" style="background:#000080;"></span>
+                <span>Navy Blue</span>
+              </label>
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Maroon / Burgundy">
+                <span class="color-dot" style="background:#800020;"></span>
+                <span>Maroon</span>
+              </label>
+              <label class="color-pill">
+                <input type="checkbox" name="themeColor" value="Lilac / Lavender">
+                <span class="color-dot" style="background:#C8A2C8;"></span>
+                <span>Lilac</span>
+              </label>
+            </div>
+            <div style="margin-top:10px;">
+              <input type="text" id="customColorInput" class="form-input" placeholder="Warna lain / Kod Warna khusus jika ada...">
+            </div>
+          </div>
+
+          <!-- Event Theme Style -->
+          <div class="form-group" style="margin-top:18px;">
+            <label class="form-label" data-i18n="labelCardStyle">Tema Majlis:</label>
+            <div class="choice-group-grid">
+              <label class="choice-card">
+                <input type="radio" name="eventThemeStyle" value="Aesthetic" checked>
+                <span>🌸 Aesthetic</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="eventThemeStyle" value="Premium Looks">
+                <span>👑 Premium Looks</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="eventThemeStyle" value="Etnik Pua Kumbu">
+                <span>🌺 Etnik Pua Kumbu</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="eventThemeStyle" value="Etnik Pua Kumbu Buriek">
+                <span>🪶 Pua Kumbu Buriek</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wishes & Language Selection -->
+        <div class="form-section-card">
+          <div class="form-section-title">
+            <span>✍️</span> <span data-i18n="secWishesTitle">Ucapan & Pilihan Bahasa Pada Kad</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-i18n="labelWishPreset">Ucapan By Design (Pilihan Sedia Ada):</label>
+            <select id="wishPreset" class="form-select" onchange="handleWishPreset(this.value)">
+              <option value="default" data-i18n="wishOpt1">"Semoga Allah memberkati majlis ini dan menyatukan kedua mempelai dalam kebaikan."</option>
+              <option value="pantun" data-i18n="wishOpt2">"Bunga mawar harum berseri, indah mekar di taman sari; Selamat pengantin baru raja sehari, kekal bahagia hingga ke syurga abadi."</option>
+              <option value="christian" data-i18n="wishOpt3">"Love is patient, love is kind. May God bless this sacred union today and always."</option>
+              <option value="traditional" data-i18n="wishOpt4">"Gendang dipalu menyambut tetamu, kasih terpatri sehati sejiwa."</option>
+              <option value="custom" data-i18n="wishOptCustom">-- Tulis Ucapan Sendiri (Custom) --</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-i18n="labelWishCustom">Ucapan Random Customer / Doa Tambahan:</label>
+            <textarea id="customWish" class="form-textarea" placeholder="Tuliskan ucapan khas atau ayat undangan anda di sini jika ada..."></textarea>
+          </div>
+
+          <!-- Language On Card -->
+          <div class="form-group" style="margin-top:16px;">
+            <label class="form-label" data-i18n="labelCardLanguage">Pilihan Bahasa Pada Kad Anda:</label>
+            <div class="choice-group-grid">
+              <label class="choice-card">
+                <input type="radio" name="cardLangChoice" value="Melayu" checked onclick="toggleMixLang(false)">
+                <span>Bahasa Melayu</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="cardLangChoice" value="English" onclick="toggleMixLang(false)">
+                <span>English</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="cardLangChoice" value="Iban" onclick="toggleMixLang(false)">
+                <span>Bahasa Iban</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="cardLangChoice" value="Mix" onclick="toggleMixLang(true)">
+                <span>Mix (Campuran)</span>
+              </label>
+            </div>
+            
+            <div id="mixLangDetailWrap" style="display:none; margin-top:12px;">
+              <input type="text" id="mixLangDetail" class="form-input" placeholder="Kalau Mix sila berikan detail (cth: Melayu + English)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Addon Options -->
+        <div class="form-section-card">
+          <div class="form-section-title">
+            <span>⭐</span> <span data-i18n="secAddonTitle">Pilihan Rekaan & Servis Tambahan</span>
+          </div>
+
+          <label class="addon-card">
+            <div class="addon-left">
+              <input type="radio" name="designRequestAddon" value="0" checked onchange="calculateTotal()">
+              <div>
+                <strong data-i18n="freeDesignTitle">Free Design Random</strong>
+                <div class="form-hint" data-i18n="freeDesignHint">Susun atur mengikut templat sedia ada terpilih tanpa caj tambahan.</div>
+              </div>
+            </div>
+            <span class="addon-price">RM 0</span>
+          </label>
+
+          <label class="addon-card">
+            <div class="addon-left">
+              <input type="radio" name="designRequestAddon" value="10" onchange="calculateTotal()">
+              <div>
+                <strong data-i18n="customDesignTitle">Customer Request Design</strong>
+                <div class="form-hint" data-i18n="customDesignHint">Ubah suai layout atau ilustrasi mengikut kehendak khusus anda.</div>
+              </div>
+            </div>
+            <span class="addon-price">+ RM 10</span>
+          </label>
+
+          <label class="addon-card" id="urgentOrderCard">
+            <div class="addon-left">
+              <input type="checkbox" id="urgentOrderAddon" value="10" onchange="calculateTotal()">
+              <div>
+                <strong data-i18n="urgentOrderTitle">Urgent Order</strong>
+                <div class="form-hint" data-i18n="urgentOrderHint">Diproses dan siap pantas dalam tempoh segera. (Tidak termasuk Package Eksklusif)</div>
+              </div>
+            </div>
+            <span class="addon-price">+ RM 10</span>
+          </label>
+        </div>
+
+        <!-- Exclusive Package Special RSVP Section -->
+        <div class="form-section-card" id="exclusiveSection" style="border: 1.5px solid var(--soft-blue); background:#F7FAFD;">
+          <div class="form-section-title">
+            <span>🌐</span> <span data-i18n="secExclusiveTitle">Isi Bahagian Ini Untuk Yang Package Eksklusif Sahaja</span>
+          </div>
+          <p class="form-hint" style="margin-bottom:14px;" data-i18n="exclusiveHint">
+            (Tandakan RSVP untuk majlis anda, boleh pilih gabungan yang berkenaan)
+          </p>
+
+          <div class="choice-group-grid" style="margin-bottom:16px;">
+            <label class="choice-card">
+              <input type="checkbox" id="rsvpReception" value="Wedding Reception">
+              <span data-i18n="rsvpReceptionLabel">RSVP Untuk Wedding Reception</span>
+            </label>
+            <label class="choice-card">
+              <input type="checkbox" id="rsvpMatrimony" value="Holy Matrimony">
+              <span data-i18n="rsvpMatrimonyLabel">RSVP Untuk Holy Matrimony</span>
+            </label>
+            <label class="choice-card">
+              <input type="checkbox" id="rsvpMasjid" value="Majlis di Masjid">
+              <span data-i18n="rsvpMasjidLabel">RSVP Untuk Majlis di Masjid</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-i18n="labelRsvpPhone">RSVP Phone No For Submit:</label>
+            <input type="tel" id="rsvpPhoneSubmit" class="form-input" placeholder="Contoh: 017-9434510 / 012-8889999">
+          </div>
+        </div>
+
+        <!-- Payment & Terms Section -->
+        <div id="sectionPayment" class="form-section-card">
+          <div class="form-section-title">
+            <span>💳</span> <span data-i18n="secPaymentTitle">Bayaran Tempahan & Resit</span>
+          </div>
+
+          <div class="qr-payment-box">
+            <h4 style="color:var(--pink-700); margin-bottom:8px;" data-i18n="qrTitle">Imbas QR Kod Untuk Buat Bayaran</h4>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;" data-i18n="qrDesc">
+              Imbas menggunakan aplikasi perbankan DuitNow / e-Wallet anda:
+            </p>
+            <img src="https://i.supaimg.com/429774af-3259-4082-8f57-06fe497c761c/7234edc5-e4e3-4a42-9a04-07bf7e66155d.jpg" 
+                 alt="QR Code Payment" 
+                 class="qr-img" 
+                 onclick="openImageModal(this.src)"
+                 onerror="this.src='https://placehold.co/400x400/FFF0F3/B7385A?text=QR+Code+Payment'">
+            <span style="font-size:0.75rem; color:var(--text-muted);">🔍 Tekan gambar untuk besarkan QR</span>
+          </div>
+
+          <!-- Upload Receipt -->
+          <div class="form-group">
+            <label class="form-label" data-i18n="labelUploadReceipt">Muat Naik Pembayaran Resit Anda Disini:</label>
+            <div class="file-dropzone" onclick="document.getElementById('receiptFile').click()">
+              <input type="file" id="receiptFile" accept="image/*,.pdf" onchange="handleReceiptUpload(event)">
+              <div style="font-size:1.8rem; margin-bottom:4px;">📎</div>
+              <strong id="dropzoneText" data-i18n="uploadHint">Klik atau letakkan fail resit bayaran di sini</strong>
+              <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">(Format: PNG, JPG, JPEG atau PDF)</div>
+              <img id="receiptPreview" class="receipt-preview-img" alt="Receipt Preview">
+            </div>
+          </div>
+
+          <!-- Terms & Condition Notice -->
+          <div class="terms-box">
+            <strong>⚠️ <span data-i18n="termsHeader">Terma dan Syarat:</span></strong><br>
+            <span data-i18n="termsBody">Selepas 3 hari kad berjaya dan telah dibuat penukaran detail akan dikenakan charge Rm10.</span>
+          </div>
+
+          <!-- Agreement Checkbox -->
+          <label class="terms-agree-wrap">
+            <input type="checkbox" id="termsAgreementCheck" required>
+            <span data-i18n="agreeLabel">Saya telah menyemak semua butiran maklumat dengan tepat dan bersetuju dengan terma & syarat di atas.</span>
+          </label>
+
+          <!-- Price Calculation Summary -->
+          <div class="price-summary-panel">
+            <div class="summary-line">
+              <span data-i18n="sumPkgPrice">Harga Pakej Kad:</span>
+              <span id="sumPkgVal">RM 0</span>
+            </div>
+            <div class="summary-line">
+              <span data-i18n="sumAddons">Caj Tambahan / Add-ons:</span>
+              <span id="sumAddonVal">RM 0</span>
+            </div>
+            <div class="summary-total">
+              <span data-i18n="sumTotal">Jumlah Keseluruhan:</span>
+              <span class="total-amount" id="sumTotalVal">RM 0</span>
+            </div>
+          </div>
+
+          <!-- Submit Order Button -->
+          <button type="submit" class="btn-submit-whatsapp" id="btnSubmitWhatsApp">
+            <span>💬</span> <span data-i18n="btnSubmitOrder">Hantar Tempahan Ke WhatsApp</span>
+          </button>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- Order Records / Rekod Tempahan Section -->
+    <section id="sectionOrderRecords" class="order-records-panel">
+      <div class="record-header-wrap">
+        <div class="record-header-title">
+          <span>📋</span> <span data-i18n="orderRecordsTitle">Rekod Tempahan Kad Kahwin</span>
+        </div>
+        <span class="record-badge-count" id="recordCountBadge">0 Rekod</span>
+      </div>
+
+      <div class="order-records-list" id="orderRecordsContainer">
+        <div class="record-empty-state" id="recordEmptyState" data-i18n="orderRecordEmpty">
+          Belum ada rekod tempahan. Sila pilih pakej, lengkapkan borang, dan klik 'Hantar Tempahan Ke WhatsApp' untuk memaparkan rekod pesanan serta harga dibeli di sini.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Image Preview -->
+  <div class="modal-backdrop" id="imageModal" onclick="closeImageModal()">
+    <div class="modal-content-wrap" onclick="event.stopPropagation()">
+      <button type="button" class="modal-close-btn" onclick="closeImageModal()">✕</button>
+      <img id="modalImgDisplay" class="modal-img" src="" alt="Preview">
+    </div>
+  </div>
+
+  <!-- Modal for Video Preview -->
+  <div class="modal-backdrop" id="videoModal" onclick="closeVideoModal()">
+    <div class="modal-content-wrap" onclick="event.stopPropagation()">
+      <button type="button" class="modal-close-btn" onclick="closeVideoModal()">✕</button>
+      <video id="modalVideoPlayer" class="modal-video" controls playsinline>
+        <source src="" type="video/mp4">
+        Pelayar anda tidak menyokong tag video.
+      </video>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div id="customToast" class="toast-box">
+    <span id="toastIcon">🌸</span>
+    <span id="toastMessage">Mesej pemberitahuan</span>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="footer-brand">
+        De Lulong Design
+      </p>
+      <p data-i18n="footerTagline">Mencipta detik terindah memori perkahwinan anda dengan sentuhan elegan & manis.</p>
+      <p style="margin-top:10px; font-size:0.75rem; color:#9E8B93;">© 2026 De Lulong Design. Hak Cipta Terpelihara.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Pautan Google Apps Script Web App Baharu
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzAivTBY7NxxbZWVPsTqmkXXb61N6MKsuV3x8GexE9pMGUICtjtzT7pBC0831Z0lF_2SA/exec";
+
+    /* Bilingual dictionary for Bahasa Melayu and English */
+    const translations = {
+      ms: {
+        studioSubtitle: "Studio Kad Kahwin Eksklusif",
+        heroBadge: "Tempahan Mudah & Siap Pantas",
+        heroTitleCute: "Cute & Sweet",
+        heroTitleMain: "Kad Kahwin Idaman Anda",
+        heroDesc: "Pilih rekaan pakej kegemaran anda, isi butiran majlis dengan teratur, dan hantar pesanan anda terus ke WhatsApp kami dengan pantas!",
+        step1Label: "Pilih Pakej Kad",
+        step2Label: "Isi Butiran Tempahan",
+        step3Label: "Bayaran & Hantar Order",
+        catSimpleTitle: "Simple Design Looks",
+        catSimpleSub: "Pilihan ringkas & jimat",
+        catAdvanceTitle: "Advance Looks",
+        catAdvanceSub: "Animasi lebih memukau",
+        catEtnikTitle: "Etnik Looks",
+        catEtnikSub: "Keanggunan warisan budaya tradisional",
+        catExclusiveTitle: "Package Eksklusif Premium Website",
+        catExclusiveSub: "Laman jemputan moden interaktif",
+        catComboTitle: "Combo Package",
+        catComboSub: "Pilihan lengkap serba boleh",
+        basicADesc: "Design PDF 1 Page only.",
+        basicBDesc: "Video Motion 1-2 Page Only.",
+        premiumADesc: "Video Motion 1-3 Page Only",
+        premiumBDesc: "Video Motion + Pdf Not for Print + Music",
+        exclADesc: "Website Page + Music + RSVP",
+        exclBDesc: "Website Page Link + Music + RSVP",
+        exclCDesc: "Website Page Link + Music + RSVP",
+        comboADesc: "Video Motion + Pdf For Print use only",
+        comboBDesc: "Website Page + Pdf For Print Use Only",
+        comboCDesc: "Untuk Dua Link Pax For Website Page Reception Invitation",
+        featEasyShare: "Mudah kongsi melalui WhatsApp / Telegram",
+        featHighRes: "Resolusi kualiti tinggi",
+        featAnimation: "Animasi teks dan peralihan lembut",
+        featFormat: "Format MP4 mesra telefon pintar",
+        featMultiPages: "Muka surat lebih lengkap dengan jadual & lokasi",
+        featAestheticVibe: "Tema visual pastel estetik",
+        featEthnicDesigns: "Pilihan corak etnik tradisional elegan",
+        featBgMusic: "Latar belakang muzik romantis / adat",
+        featDirectLink: "Link web unik untuk tetamu",
+        featRsvpBasic: "Borang RSVP tetamu terbina dalam",
+        featPrintable: "Sedia untuk dihantar ke kedai cetak",
+        featCompleteDuo: "Dua dalam satu untuk digital & fizikal",
+        featTwoSides: "Sesuai untuk majlis sebelah lelaki & perempuan berasingan",
+        btnSelect: "Pilih Pakej Ini",
+        btnWatchVideo: "Tekan Sini Untuk Contoh Video",
+        noPkgSelected: "Belum memilih pakej",
+        btnProceedFill: "Isi Butiran Tempahan",
+        formTitle: "Borang Maklumat Tempahan Kad",
+        formSubtitle: "Sila lengkapkan butiran pengantin dan acara perkahwinan anda di bawah",
+        activePkgLabel: "Pakej Dipilih:",
+        basePriceLabel: "Harga Asas:",
+        secCoupleTitle: "Maklumat Pengantin",
+        labelGroom: "Nama Pengantin Lelaki:",
+        labelBride: "Nama Pengantin Perempuan:",
+        labelShortName: "Cadangan Nama Pada Kad (Contoh: Anna & Harry):",
+        shortNameHint: "(Maksimum tidak terlalu panjang, disarankan nama panggilan)",
+        secParentsTitle: "Nama Ibu Bapa",
+        titleGroomParents: "Nama Ibu Bapa Sebelah Lelaki:",
+        labelGroomFather: "1. Nama Bapa (Lelaki):",
+        labelGroomMother: "2. Nama Ibu (Lelaki):",
+        titleBrideParents: "Nama Ibu Bapa Sebelah Perempuan:",
+        labelBrideFather: "1. Nama Bapa (Perempuan):",
+        labelBrideMother: "2. Nama Ibu (Perempuan):",
+        secEventTitle: "Maklumat & Lokasi Majlis",
+        labelAddress: "Alamat Majlis:",
+        labelMapLink: "Link Alamat Majlis (Google Maps / Waze):",
+        labelQrOpt: "Pilihan Minta Buat Dalam Bentuk QR:",
+        optYes: "Ya",
+        optNo: "Tidak",
+        labelDate: "Tarikh Majlis:",
+        labelTime: "Masa Majlis:",
+        secPicTitle: "PIC List Contact (Unlimited)",
+        picHint: "Masukkan senarai pegawai atau waris yang boleh dihubungi oleh para tetamu.",
+        btnAddPic: "+ Tambah PIC Contact",
+        secThemeTitle: "Tema Warna & Gaya Majlis",
+        labelColors: "Warna Tema Majlis (Boleh tanda lebih dari satu / Random):",
+        labelCardStyle: "Tema Majlis:",
+        secWishesTitle: "Ucapan & Pilihan Bahasa Pada Kad",
+        labelWishPreset: "Ucapan By Design (Pilihan Sedia Ada):",
+        wishOpt1: '"Semoga Allah memberkati majlis ini dan menyatukan kedua mempelai dalam kebaikan."',
+        wishOpt2: '"Bunga mawar harum berseri, indah mekar di taman sari; Selamat pengantin baru raja sehari, kekal bahagia hingga ke syurga abadi."',
+        wishOpt3: '"Love is patient, love is kind. May God bless this sacred union today and always."',
+        wishOpt4: '"Gendang dipalu menyambut tetamu, kasih terpatri sehati sejiwa."',
+        wishOptCustom: "-- Tulis Ucapan Sendiri (Custom) --",
+        labelWishCustom: "Ucapan Random Customer / Doa Tambahan:",
+        labelCardLanguage: "Pilihan Bahasa Pada Kad Anda:",
+        secAddonTitle: "Pilihan Rekaan & Servis Tambahan",
+        freeDesignTitle: "Free Design Random",
+        freeDesignHint: "Susun atur mengikut templat sedia ada terpilih tanpa caj tambahan.",
+        customDesignTitle: "Customer Request Design",
+        customDesignHint: "Ubah suai layout atau ilustrasi mengikut kehendak khusus anda.",
+        urgentOrderTitle: "Urgent Order",
+        urgentOrderHint: "Diproses dan siap pantas dalam tempoh segera. (Tidak termasuk Package Eksklusif)",
+        secExclusiveTitle: "Isi Bahagian Ini Untuk Yang Package Eksklusif Sahaja",
+        exclusiveHint: "(Tandakan RSVP untuk majlis anda, boleh pilih gabungan yang berkenaan)",
+        rsvpReceptionLabel: "RSVP Untuk Wedding Reception",
+        rsvpMatrimonyLabel: "RSVP Untuk Holy Matrimony",
+        rsvpMasjidLabel: "RSVP Untuk Majlis di Masjid",
+        labelRsvpPhone: "RSVP Phone No For Submit:",
+        secPaymentTitle: "Bayaran Tempahan & Resit",
+        qrTitle: "Imbas QR Kod Untuk Buat Bayaran",
+        qrDesc: "Imbas menggunakan aplikasi perbankan DuitNow / e-Wallet anda:",
+        labelUploadReceipt: "Muat Naik Pembayaran Resit Anda Disini:",
+        uploadHint: "Klik atau letakkan fail resit bayaran di sini",
+        termsHeader: "Terma dan Syarat:",
+        termsBody: "Selepas 3 hari kad berjaya dan telah dibuat penukaran detail akan dikenakan charge Rm10.",
+        agreeLabel: "Saya telah menyemak semua butiran maklumat dengan tepat dan bersetuju dengan terma & syarat di atas.",
+        sumPkgPrice: "Harga Pakej Kad:",
+        sumAddons: "Caj Tambahan / Add-ons:",
+        sumTotal: "Jumlah Keseluruhan:",
+        btnSubmitOrder: "Hantar Tempahan Ke WhatsApp",
+        footerTagline: "Mencipta detik terindah memori perkahwinan anda dengan sentuhan elegan & manis.",
+        orderRecordsTitle: "Rekod Tempahan Kad Kahwin",
+        orderRecordEmpty: "Belum ada rekod tempahan. Sila pilih pakej, lengkapkan borang, dan klik 'Hantar Tempahan Ke WhatsApp' untuk memaparkan rekod pesanan serta harga dibeli di sini.",
+        pricePurchasedLabel: "Harga Dibeli:",
+        statusSubmitted: "Dihantar Ke WhatsApp & Disimpan ke Google Sheets"
+      },
+      en: {
+        studioSubtitle: "Exclusive Wedding Card Studio",
+        heroBadge: "Effortless Ordering & Fast Completion",
+        heroTitleCute: "Cute & Sweet",
+        heroTitleMain: "Your Dream Wedding Card",
+        heroDesc: "Choose your favorite package design, fill in your event details smoothly, and send your order directly to our WhatsApp instantly!",
+        step1Label: "Select Card Package",
+        step2Label: "Fill Order Details",
+        step3Label: "Payment & Send Order",
+        catSimpleTitle: "Simple Design Looks",
+        catSimpleSub: "Minimalist & affordable choice",
+        catAdvanceTitle: "Advance Looks",
+        catAdvanceSub: "More captivating animations",
+        catEtnikTitle: "Ethnic Looks",
+        catEtnikSub: "Timeless traditional cultural heritage",
+        catExclusiveTitle: "Exclusive Premium Website Package",
+        catExclusiveSub: "Modern interactive wedding websites",
+        catComboTitle: "Combo Package",
+        catComboSub: "All-in-one comprehensive options",
+        basicADesc: "Design PDF 1 Page only.",
+        basicBDesc: "Video Motion 1-2 Page Only.",
+        premiumADesc: "Video Motion 1-3 Page Only",
+        premiumBDesc: "Video Motion + Pdf Not for Print + Music",
+        exclADesc: "Website Page + Music + RSVP",
+        exclBDesc: "Website Page Link + Music + RSVP",
+        exclCDesc: "Website Page Link + Music + RSVP",
+        comboADesc: "Video Motion + Pdf For Print use only",
+        comboBDesc: "Website Page + Pdf For Print Use Only",
+        comboCDesc: "For Two Link Pax For Website Page Reception Invitation",
+        featEasyShare: "Easy to share via WhatsApp / Telegram",
+        featHighRes: "Crystal-clear high resolution",
+        featAnimation: "Smooth typography & gentle transitions",
+        featFormat: "Smartphone-ready MP4 format",
+        featMultiPages: "Extra pages for schedule & maps",
+        featAestheticVibe: "Aesthetic pastel visual theme",
+        featEthnicDesigns: "Elegant traditional ethnic motifs",
+        featBgMusic: "Romantic / cultural background music",
+        featDirectLink: "Personalized web link for guests",
+        featRsvpBasic: "Built-in guest RSVP confirmation",
+        featPrintable: "Ready to print at your local press",
+        featCompleteDuo: "Two-in-one digital and physical package",
+        featTwoSides: "Ideal for separate groom and bride receptions",
+        btnSelect: "Select This Package",
+        btnWatchVideo: "Click Here For Sample Video",
+        noPkgSelected: "No package selected yet",
+        btnProceedFill: "Fill Order Details",
+        formTitle: "Wedding Card Order Form",
+        formSubtitle: "Please complete your bride, groom, and wedding reception details below",
+        activePkgLabel: "Selected Package:",
+        basePriceLabel: "Base Price:",
+        secCoupleTitle: "Bride & Groom Information",
+        labelGroom: "Groom's Full Name:",
+        labelBride: "Bride's Full Name:",
+        labelShortName: "Card Display Names (e.g., Anna & Harry):",
+        shortNameHint: "(Keep it concise, nicknames are recommended)",
+        secParentsTitle: "Parents' Names",
+        titleGroomParents: "Groom's Parents:",
+        labelGroomFather: "1. Father's Name (Groom):",
+        labelGroomMother: "2. Mother's Name (Groom):",
+        titleBrideParents: "Bride's Parents:",
+        labelBrideFather: "1. Father's Name (Bride):",
+        labelBrideMother: "2. Mother's Name (Bride):",
+        secEventTitle: "Event & Location Details",
+        labelAddress: "Event Address / Venue:",
+        labelMapLink: "Venue Map Link (Google Maps / Waze):",
+        labelQrOpt: "Generate QR Code for Map Location:",
+        optYes: "Yes",
+        optNo: "No",
+        labelDate: "Event Date:",
+        labelTime: "Event Time:",
+        secPicTitle: "Contact Person List (Unlimited)",
+        picHint: "Add family or event coordinators guests can contact for directions or questions.",
+        btnAddPic: "+ Add Contact Person",
+        secThemeTitle: "Color Theme & Card Style",
+        labelColors: "Event Color Theme (Multiple selections allowed / Random):",
+        labelCardStyle: "Event Style Theme:",
+        secWishesTitle: "Greeting & Card Language",
+        labelWishPreset: "Greeting By Design (Preset Options):",
+        wishOpt1: '"May Allah bless this union and bring both hearts together in goodness."',
+        wishOpt2: '"Roses bloom with fragrant grace, sweet love marks this sacred place; Wishing the newlyweds unending joy and eternal grace."',
+        wishOpt3: '"Love is patient, love is kind. May God bless this sacred union today and always."',
+        wishOpt4: '"Beating drums welcome every dear guest, two united souls forever blessed."',
+        wishOptCustom: "-- Write Custom Greeting --",
+        labelWishCustom: "Custom Greetings / Personalized Blessing:",
+        labelCardLanguage: "Language Choice On Your Card:",
+        secAddonTitle: "Design Options & Additional Services",
+        freeDesignTitle: "Free Design Random",
+        freeDesignHint: "Standard stylish layout according to template without additional cost.",
+        customDesignTitle: "Customer Request Design",
+        customDesignHint: "Customized graphics and layout tuned to your exact preferences.",
+        urgentOrderTitle: "Urgent Order",
+        urgentOrderHint: "Fast-tracked expedited processing. (Not applicable to Exclusive Packages)",
+        secExclusiveTitle: "Fill This Section For Exclusive Packages Only",
+        exclusiveHint: "(Mark RSVP details for your wedding, you can check multiple)",
+        rsvpReceptionLabel: "RSVP For Wedding Reception",
+        rsvpMatrimonyLabel: "RSVP For Holy Matrimony",
+        rsvpMasjidLabel: "RSVP For Mosque Ceremony",
+        labelRsvpPhone: "RSVP Phone No For Submit:",
+        secPaymentTitle: "Order Payment & Receipt",
+        qrTitle: "Scan QR Code To Make Payment",
+        qrDesc: "Scan using your DuitNow / e-Wallet banking app:",
+        labelUploadReceipt: "Upload Your Payment Receipt Here:",
+        uploadHint: "Click or drop your receipt file here",
+        termsHeader: "Terms & Conditions:",
+        termsBody: "After 3 days from completion, any subsequent alteration of details will incur a RM10 fee.",
+        agreeLabel: "I have verified all the information thoroughly and agree to the terms & conditions above.",
+        sumPkgPrice: "Card Package Price:",
+        sumAddons: "Add-ons / Surcharges:",
+        sumTotal: "Grand Total:",
+        btnSubmitOrder: "Submit Order To WhatsApp",
+        footerTagline: "Creating your most cherished wedding memories with an elegant & sweet touch.",
+        orderRecordsTitle: "Wedding Card Order Records",
+        orderRecordEmpty: "No order records yet. Please select a package, fill in details, and click 'Submit Order To WhatsApp' to record your purchase and price here.",
+        pricePurchasedLabel: "Purchased Price:",
+        statusSubmitted: "Sent to WhatsApp & Saved to Google Sheets"
+      }
+    };
+
+    let currentLang = 'ms';
+    let selectedPackage = {
+      id: null,
+      name: '',
+      price: 0
+    };
+    let uploadedReceiptFileName = '';
+    let submittedOrdersList = [];
+
+    function switchLanguage(lang) {
+      currentLang = lang;
+      
+      document.getElementById('btnLangMs').classList.toggle('active', lang === 'ms');
+      document.getElementById('btnLangEn').classList.toggle('active', lang === 'en');
+      
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      if (lang === 'en') {
+        document.getElementById('groomName').placeholder = "e.g., Muhammad Harry Bin Azman";
+        document.getElementById('brideName').placeholder = "e.g., Nur Anna Binti Rosli";
+        document.getElementById('groomFather').placeholder = "Groom's Father Full Name";
+        document.getElementById('groomMother').placeholder = "Groom's Mother Full Name";
+        document.getElementById('brideFather').placeholder = "Bride's Father Full Name";
+        document.getElementById('brideMother').placeholder = "Bride's Mother Full Name";
+        document.getElementById('eventAddress').placeholder = "e.g., Grand Ballroom Hotel, Jalan Sultan, Kuala Lumpur";
+        document.getElementById('eventTime').placeholder = "e.g., 11:00 AM - 4:00 PM";
+        document.getElementById('customColorInput').placeholder = "Other custom colors / hex codes if any...";
+        document.getElementById('customWish').placeholder = "Write your customized message or invitation quote here...";
+        document.getElementById('rsvpPhoneSubmit').placeholder = "e.g., 017-9434510 / 012-8889999";
+      } else {
+        document.getElementById('groomName').placeholder = "Contoh: Muhammad Harry Bin Azman";
+        document.getElementById('brideName').placeholder = "Contoh: Nur Anna Binti Rosli";
+        document.getElementById('groomFather').placeholder = "Nama Bapa Pengantin Lelaki";
+        document.getElementById('groomMother').placeholder = "Nama Ibu Pengantin Lelaki";
+        document.getElementById('brideFather').placeholder = "Nama Bapa Pengantin Perempuan";
+        document.getElementById('brideMother').placeholder = "Nama Ibu Pengantin Perempuan";
+        document.getElementById('eventAddress').placeholder = "Contoh: Dewan Perdana Gemilang, Jalan Kuching, 50480 Kuala Lumpur";
+        document.getElementById('eventTime').placeholder = "Contoh: 11:00 AM - 4:00 PM";
+        document.getElementById('customColorInput').placeholder = "Warna lain / Kod Warna khusus jika ada...";
+        document.getElementById('customWish').placeholder = "Tuliskan ucapan khas atau ayat undangan anda di sini jika ada...";
+        document.getElementById('rsvpPhoneSubmit').placeholder = "Contoh: 017-9434510 / 012-8889999";
+      }
+
+      renderOrderRecords();
+      showToast(lang === 'ms' ? 'Bahasa ditukar ke Bahasa Melayu' : 'Language switched to English', '🌸');
+    }
+
+    function selectPackage(pkgId, pkgName, price) {
+      selectedPackage = {
+        id: pkgId,
+        name: pkgName,
+        price: price
+      };
+
+      document.querySelectorAll('.pkg-card').forEach(card => {
+        card.classList.toggle('selected', card.getAttribute('data-pkg-id') === pkgId);
+      });
+
+      document.getElementById('formActivePkgTitle').textContent = pkgName;
+      document.getElementById('formActivePkgPrice').textContent = `RM ${price}`;
+      document.getElementById('stickyPkgName').textContent = pkgName;
+      document.getElementById('stickyPkgPrice').textContent = `RM ${price}`;
+      
+      const stickyBar = document.getElementById('stickyOrderBar');
+      stickyBar.style.display = 'flex';
+
+      const isExclusive = pkgId.startsWith('exclusive-');
+      const urgentCard = document.getElementById('urgentOrderCard');
+      const urgentInput = document.getElementById('urgentOrderAddon');
+      
+      if (isExclusive) {
+        urgentInput.checked = false;
+        urgentInput.disabled = true;
+        urgentCard.style.opacity = '0.5';
+        urgentCard.title = "Urgent Order tidak ditawarkan untuk pakej eksklusif website.";
+      } else {
+        urgentInput.disabled = false;
+        urgentCard.style.opacity = '1';
+        urgentCard.title = "";
+      }
+
+      calculateTotal();
+      showToast(currentLang === 'ms' ? `Pakej "${pkgName}" telah dipilih!` : `Package "${pkgName}" selected!`, '💖');
+    }
+
+    function calculateTotal() {
+      let basePrice = selectedPackage.price || 0;
+      let addonTotal = 0;
+
+      const selectedDesignAddon = document.querySelector('input[name="designRequestAddon"]:checked');
+      if (selectedDesignAddon) {
+        addonTotal += parseInt(selectedDesignAddon.value, 10) || 0;
+      }
+
+      const urgentCheck = document.getElementById('urgentOrderAddon');
+      if (urgentCheck && urgentCheck.checked && !urgentCheck.disabled) {
+        addonTotal += 10;
+      }
+
+      const grandTotal = basePrice + addonTotal;
+
+      document.getElementById('sumPkgVal').textContent = `RM ${basePrice}`;
+      document.getElementById('sumAddonVal').textContent = `RM ${addonTotal}`;
+      document.getElementById('sumTotalVal').textContent = `RM ${grandTotal}`;
+      document.getElementById('stickyPkgPrice').textContent = `RM ${grandTotal}`;
+    }
+
+    function addPicRow() {
+      const container = document.getElementById('picContainer');
+      const newRow = document.createElement('div');
+      newRow.className = 'pic-row';
+      newRow.innerHTML = `
+        <input type="text" class="form-input pic-name" placeholder="${currentLang === 'ms' ? 'Nama PIC (cth: Abang Danial)' : 'Contact Name (e.g. Bro Danial)'}">
+        <input type="tel" class="form-input pic-phone" placeholder="${currentLang === 'ms' ? 'No Telefon (cth: 013-9876543)' : 'Phone No (e.g. 013-9876543)'}">
+        <button type="button" class="btn-pic-remove" onclick="removePicRow(this)" title="Hapus">✕</button>
+      `;
+      container.appendChild(newRow);
+    }
+
+    function removePicRow(btn) {
+      const container = document.getElementById('picContainer');
+      const rows = container.querySelectorAll('.pic-row');
+      if (rows.length > 1) {
+        btn.closest('.pic-row').remove();
+      } else {
+        const row = btn.closest('.pic-row');
+        row.querySelector('.pic-name').value = '';
+        row.querySelector('.pic-phone').value = '';
+        showToast(currentLang === 'ms' ? 'Sekurang-kurangnya satu baris PIC dikekalkan' : 'At least one contact row is preserved', 'ℹ️');
+      }
+    }
+
+    function switchCardGallery(mainImgId, newSrc, thumbElement) {
+      const mainImg = document.getElementById(mainImgId);
+      if (mainImg) {
+        mainImg.src = newSrc;
+      }
+      const parentRow = thumbElement.closest('.thumbnails-row');
+      if (parentRow) {
+        parentRow.querySelectorAll('.thumb-item').forEach(item => item.classList.remove('active'));
+        thumbElement.classList.add('active');
+      }
+      openImageModal(newSrc);
+    }
+
+    function openImageModal(imgSrc) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImgDisplay');
+      modalImg.src = imgSrc;
+      modal.classList.add('show');
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('show');
+      document.getElementById('modalImgDisplay').src = '';
+    }
+
+    function openVideoModal(videoSrc) {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('modalVideoPlayer');
+      player.src = videoSrc;
+      modal.classList.add('show');
+      player.play().catch(e => console.log("Video auto-play restricted by browser: ", e));
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('modalVideoPlayer');
+      player.pause();
+      player.src = '';
+      modal.classList.remove('show');
+    }
+
+    function toggleMixLang(show) {
+      const wrap = document.getElementById('mixLangDetailWrap');
+      wrap.style.display = show ? 'block' : 'none';
+      if (show) {
+        document.getElementById('mixLangDetail').focus();
+      }
+    }
+
+    function handleWishPreset(val) {
+      const customArea = document.getElementById('customWish');
+      if (val === 'custom') {
+        customArea.focus();
+      }
+    }
+
+    function handleReceiptUpload(event) {
+      const file = event.target.files[0];
+      const preview = document.getElementById('receiptPreview');
+      const dropzoneText = document.getElementById('dropzoneText');
+
+      if (file) {
+        uploadedReceiptFileName = file.name;
+        dropzoneText.textContent = `✓ ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+        
+        if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            preview.src = e.target.result;
+            preview.style.display = 'inline-block';
+          };
+          reader.readAsDataURL(file);
+        } else {
+          preview.style.display = 'none';
+        }
+        showToast(currentLang === 'ms' ? 'Resit bayaran berjaya dipilih!' : 'Receipt attached successfully!', '📎');
+      }
+    }
+
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function showToast(message, icon = '🌸', isError = false) {
+      const toast = document.getElementById('customToast');
+      document.getElementById('toastIcon').textContent = icon;
+      document.getElementById('toastMessage').textContent = message;
+      toast.classList.toggle('error', isError);
+      toast.classList.add('show');
+
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+
+    function addOrderRecord(orderData) {
+      submittedOrdersList.unshift(orderData);
+      renderOrderRecords();
+    }
+
+    function renderOrderRecords() {
+      const container = document.getElementById('orderRecordsContainer');
+      const countBadge = document.getElementById('recordCountBadge');
+      
+      const countText = currentLang === 'ms' ? `${submittedOrdersList.length} Rekod` : `${submittedOrdersList.length} Records`;
+      countBadge.textContent = countText;
+
+      if (submittedOrdersList.length === 0) {
+        container.innerHTML = `
+          <div class="record-empty-state" id="recordEmptyState">
+            ${translations[currentLang].orderRecordEmpty}
+          </div>
+        `;
+        return;
+      }
+
+      const priceLabel = translations[currentLang].pricePurchasedLabel || 'Harga Dibeli:';
+      const statusLabel = translations[currentLang].statusSubmitted || 'Dihantar Ke WhatsApp & Disimpan ke Google Sheets';
+
+      container.innerHTML = submittedOrdersList.map(order => `
+        <div class="order-record-card">
+          <div class="record-main-info">
+            <span class="record-order-id">NO. TEMPAHAN: ${order.orderId}</span>
+            <div class="record-pkg-name">💍 ${order.packageName}</div>
+            <div class="record-couple-name">👰🤵 ${order.coupleNames}</div>
+            <div class="record-meta-date">📅 ${order.timestamp} • Majlis: ${order.eventDate}</div>
+            ${order.attending ? `<div style="font-size:0.78rem; color:var(--soft-blue-dark); font-weight:600; margin-top:2px;">🎟️ Status / Kehadiran: ${order.attending}</div>` : ''}
+            ${order.wishesSnippet ? `<div class="record-wishes-snippet">💌 "${order.wishesSnippet}"</div>` : ''}
+          </div>
+          <div class="record-price-status">
+            <span class="record-price-label">${priceLabel}</span>
+            <span class="record-price-badge">${order.pricePurchased}</span>
+            <span class="record-status-tag">✓ ${statusLabel}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    /**
+     * Menghantar data ke Google Apps Script (Google Sheets)
+     * Menggunakan fetch text/plain tanpa preflight dan keepalive + sandaran navigator.sendBeacon
+     * Bebas sekatan CORS di iPhone Safari, Android Chrome, dan pelayar mudah alih.
+     */
+    function sendDataToGoogleSheets(dataPayload) {
+      const payloadString = JSON.stringify(dataPayload);
+
+      try {
+        // 1. Penghantaran utama menggunakan fetch keepalive (disokong penuh di Safari iOS & Chrome Android)
+        fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          cache: "no-cache",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: payloadString,
+          keepalive: true
+        }).then(() => {
+          console.log("Data tempahan berjaya dihantar ke Google Sheets.");
+        }).catch(err => {
+          console.warn("Status penghantaran Google Sheets (fetch):", err);
+        });
+
+        // 2. Sandaran pelayar jika aplikasi bertukar tab dengan serta-merta
+        if (navigator.sendBeacon) {
+          try {
+            const blob = new Blob([payloadString], { type: 'text/plain;charset=utf-8' });
+            navigator.sendBeacon(GOOGLE_SCRIPT_URL, blob);
+          } catch (bErr) {
+            // Abaikan jika tidak disokong
+          }
+        }
+      } catch (e) {
+        console.warn("Ralat rangkaian:", e);
+      }
+    }
+
+    function submitOrderToWhatsApp() {
+      // 1. Semak pemilihan pakej
+      if (!selectedPackage.id) {
+        showToast(currentLang === 'ms' ? 'Sila pilih satu pakej kad terlebih dahulu di Langkah 1!' : 'Please choose a package in Step 1 first!', '⚠️', true);
+        scrollToSection('sectionPackages');
+        return;
+      }
+
+      // 2. Semak Persetujuan Terma
+      const termsCheck = document.getElementById('termsAgreementCheck');
+      if (!termsCheck.checked) {
+        showToast(currentLang === 'ms' ? 'Sila tanda setuju pada Terma & Syarat sebelum menghantar!' : 'Please accept the Terms & Conditions to proceed!', '⚠️', true);
+        termsCheck.focus();
+        return;
+      }
+
+      // 3. Nama Pengantin
+      const groomName = document.getElementById('groomName').value.trim();
+      const brideName = document.getElementById('brideName').value.trim();
+      const cardShortName = document.getElementById('cardShortName').value.trim();
+
+      if (!groomName || !brideName || !cardShortName) {
+        showToast(currentLang === 'ms' ? 'Sila lengkapkan nama pengantin dan nama ringkas kad!' : 'Please enter the bride, groom, and display names!', '⚠️', true);
+        return;
+      }
+
+      // 4. Ibu Bapa
+      const groomFather = document.getElementById('groomFather').value.trim() || '-';
+      const groomMother = document.getElementById('groomMother').value.trim() || '-';
+      const brideFather = document.getElementById('brideFather').value.trim() || '-';
+      const brideMother = document.getElementById('brideMother').value.trim() || '-';
+
+      // 5. Lokasi & Acara
+      const eventAddress = document.getElementById('eventAddress').value.trim();
+      // Jika pelanggan tidak letak link maps, secara automatik diletakkan N/A
+      const eventMapLink = document.getElementById('eventMapLink').value.trim() || 'N/A';
+      const qrLocationOpt = document.querySelector('input[name="qrLocationOpt"]:checked')?.value || 'Ya';
+      const eventDate = document.getElementById('eventDate').value;
+      const eventTime = document.getElementById('eventTime').value.trim();
+
+      // 6. PIC Contacts
+      const picRows = document.querySelectorAll('.pic-row');
+      let picList = [];
+      picRows.forEach((row, idx) => {
+        const name = row.querySelector('.pic-name').value.trim();
+        const phone = row.querySelector('.pic-phone').value.trim();
+        if (name || phone) {
+          picList.push(`${idx + 1}. ${name || 'PIC'} (${phone || 'Tiada No'})`);
+        }
+      });
+      const picSummary = picList.length > 0 ? picList.join('\n') : 'Tiada senarai PIC';
+
+      // 7. Tema & Gaya
+      const selectedColors = Array.from(document.querySelectorAll('input[name="themeColor"]:checked')).map(cb => cb.value);
+      const customColor = document.getElementById('customColorInput').value.trim();
+      if (customColor) selectedColors.push(customColor);
+      const colorSummary = selectedColors.length > 0 ? selectedColors.join(', ') : 'Random / Default';
+
+      const eventThemeStyle = document.querySelector('input[name="eventThemeStyle"]:checked')?.value || 'Aesthetic';
+
+      // 8. Ucapan & Bahasa
+      const wishSelect = document.getElementById('wishPreset');
+      let wishPresetText = wishSelect.options[wishSelect.selectedIndex].text;
+      const customWish = document.getElementById('customWish').value.trim();
+      const displayWishText = customWish || (wishSelect.value !== 'default' ? wishPresetText : wishPresetText);
+
+      const cardLangChoice = document.querySelector('input[name="cardLangChoice"]:checked')?.value || 'Melayu';
+      let langSummary = cardLangChoice;
+      if (cardLangChoice === 'Mix') {
+        const mixDetail = document.getElementById('mixLangDetail').value.trim();
+        if (mixDetail) langSummary += ` (${mixDetail})`;
+      }
+
+      // 9. Addons
+      const selectedDesignAddon = document.querySelector('input[name="designRequestAddon"]:checked')?.value;
+      const designAddonText = selectedDesignAddon === '10' ? 'Customer Request Design (+RM10)' : 'Free Design Random (RM0)';
+      
+      const urgentCheck = document.getElementById('urgentOrderAddon');
+      const urgentText = (urgentCheck && urgentCheck.checked && !urgentCheck.disabled) ? 'Ya (+RM10)' : 'Tidak';
+
+      // 10. Bahagian Eksklusif
+      let exclusiveDetails = '';
+      const isExclusivePkg = selectedPackage.id.startsWith('exclusive-');
+      const rsvpOptions = [];
+      let rsvpPhone = '-';
+      if (isExclusivePkg) {
+        if (document.getElementById('rsvpReception').checked) rsvpOptions.push('Wedding Reception');
+        if (document.getElementById('rsvpMatrimony').checked) rsvpOptions.push('Holy Matrimony');
+        if (document.getElementById('rsvpMasjid').checked) rsvpOptions.push('Majlis di Masjid');
+        rsvpPhone = document.getElementById('rsvpPhoneSubmit').value.trim() || '-';
+
+        exclusiveDetails = `
+🌟 *BAHAGIAN EKSKLUSIF WEBSITE*
+• Pilihan RSVP: ${rsvpOptions.length > 0 ? rsvpOptions.join(', ') : 'Tiada'}
+• No Telefon RSVP: ${rsvpPhone}
+`;
+      }
+
+      // 11. Pengiraan & ID Unik
+      const grandTotalText = document.getElementById('sumTotalVal').textContent;
+      const receiptStatus = uploadedReceiptFileName ? `Dilampirkan (${uploadedReceiptFileName})` : 'Akan dihantar melalui chat WhatsApp';
+      const generatedOrderId = 'DL-' + Math.floor(100000 + Math.random() * 900000);
+      const nowFormatted = new Date().toLocaleDateString('ms-MY', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ' ' + new Date().toLocaleTimeString('ms-MY', { hour: '2-digit', minute: '2-digit' });
+
+      // Format Tarikh Majlis
+      let displayEventDate = eventDate || '-';
+      if (eventDate) {
+        const dParts = eventDate.split('-');
+        if (dParts.length === 3) {
+          displayEventDate = `${dParts[2]}/${dParts[1]}/${dParts[0]}`;
+        }
+      }
+
+      const attendingStatus = rsvpOptions.length > 0 ? rsvpOptions.join(', ') : 'Hadir';
+
+      // 12. Hantar Payload ke Google Apps Script (Lengkap dengan Timestamp, Nama, Tarikh, Id Oder, Rekod Harga Oder, Ucapan & Kehadiran/Attending)
+      const googleSheetPayload = {
+        timestamp: nowFormatted,
+        cardShortName: cardShortName,
+        groomName: groomName,
+        brideName: brideName,
+        nama: cardShortName,
+        Nama: cardShortName,
+        name: cardShortName,
+        tarikh: displayEventDate,
+        Tarikh: displayEventDate,
+        eventDate: displayEventDate,
+        idOder: generatedOrderId,
+        IdOder: generatedOrderId,
+        orderId: generatedOrderId,
+        rekodHargaOder: grandTotalText,
+        RekodHargaOder: grandTotalText,
+        totalPrice: grandTotalText,
+        price: grandTotalText,
+        ucapan: displayWishText,
+        Ucapan: displayWishText,
+        wishes: displayWishText,
+        attending: attendingStatus,
+        Attending: attendingStatus
+      };
+
+      sendDataToGoogleSheets(googleSheetPayload);
+
+      // 13. Simpan dan Paparkan Rekod Tempahan di Halaman Secara Dinamik
+      const orderRecordData = {
+        orderId: generatedOrderId,
+        packageName: selectedPackage.name,
+        coupleNames: `${cardShortName} (${groomName} & ${brideName})`,
+        pricePurchased: grandTotalText,
+        eventDate: displayEventDate,
+        attending: attendingStatus,
+        wishesSnippet: displayWishText.length > 60 ? displayWishText.substring(0, 60) + '...' : displayWishText,
+        timestamp: nowFormatted
+      };
+
+      addOrderRecord(orderRecordData);
+
+      // 14. Jana Mesej WhatsApp
+      const message = `🕊️ *TEMPAHAN KAD KAHWIN BARU* 🕊️
+-----------------------------------
+🔖 *NO. TEMPAHAN:* ${generatedOrderId}
+💍 *PAKEJ DIPILIH:* ${selectedPackage.name}
+💰 *HARGA DIBELI:* ${grandTotalText}
+📎 *STATUS RESIT:* ${receiptStatus}
+
+👰🤵 *MAKLUMAT PENGANTIN:*
+• Pengantin Lelaki: ${groomName}
+• Pengantin Perempuan: ${brideName}
+• Nama Pada Kad: ${cardShortName}
+
+👨‍👩‍👧‍👦 *IBU BAPA LELAKI:*
+1. Bapa: ${groomFather}
+2. Ibu: ${groomMother}
+
+👨‍👩‍👧‍👦 *IBU BAPA PEREMPUAN:*
+1. Bapa: ${brideFather}
+2. Ibu: ${brideMother}
+
+📍 *MAKLUMAT MAJLIS:*
+• Tarikh: ${displayEventDate}
+• Masa: ${eventTime}
+• Alamat: ${eventAddress}
+• Link Lokasi: ${eventMapLink}
+• Request Bentuk QR: ${qrLocationOpt}
+
+📞 *SENARAI PIC CONTACT:*
+${picSummary}
+
+🎨 *TEMA & GAYA:*
+• Tema Warna: ${colorSummary}
+• Gaya Kad: ${eventThemeStyle}
+
+✍️ *UCAPAN & BAHASA:*
+• Bahasa Pada Kad: ${langSummary}
+• Ucapan Design: ${wishPresetText}
+• Ucapan Khas: ${customWish || '-'}
+
+⭐ *ADD-ONS:*
+• Pilihan Rekaan: ${designAddonText}
+• Urgent Order: ${urgentText}
+${exclusiveDetails}
+-----------------------------------
+✅ *PENGESAHAN:* Pelanggan telah bersetuju dengan Terma & Syarat (Caj Rm10 untuk perubahan selepas 3 hari siap).`;
+
+      // 15. Buka WhatsApp ke 60179434531
+      const waNumber = "60179434531";
+      const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+
+      showToast(currentLang === 'ms' ? `Tempahan #${generatedOrderId} direkodkan! Membuka WhatsApp...` : `Order #${generatedOrderId} recorded! Opening WhatsApp...`, '📋');
+      
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 700);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      calculateTotal();
+      renderOrderRecords();
+      
+      window.addEventListener('scroll', () => {
+        const scrollPos = window.scrollY + 200;
+        const s1 = document.getElementById('sectionPackages').offsetTop;
+        const s2 = document.getElementById('sectionOrderForm').offsetTop;
+        const s3 = document.getElementById('sectionPayment').offsetTop;
+
+        const p1 = document.getElementById('stepPill1');
+        const p2 = document.getElementById('stepPill2');
+        const p3 = document.getElementById('stepPill3');
+
+        p1.classList.remove('active');
+        p2.classList.remove('active');
+        p3.classList.remove('active');
+
+        if (scrollPos >= s3) {
+          p3.classList.add('active');
+        } else if (scrollPos >= s2) {
+          p2.classList.add('active');
+        } else {
+          p1.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
